@@ -28,7 +28,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await api.post('/register', {
+      await api.post('/register', {
         ...form,
         role
       });
